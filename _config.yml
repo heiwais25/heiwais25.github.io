@@ -1,9 +1,9 @@
 # Site settings
-title: Everyday coding 
+title: Joyful programming the future
 header-img: img/home-bg.jpg
 email: heiwais25@gmail.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+copyright_name: MyMeMine
+description: "Study programming, statistics and physics to predict!"
 baseurl: ""
 url: "https://heiwais25.github.io/"
 # twitter_username: SBootstrap
@@ -13,13 +13,13 @@ email_username:  heiwais25
 
 # Google Analytics
 # To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-105673303-1
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-paginate: 5
+paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
