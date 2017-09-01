@@ -4,7 +4,7 @@ subtitle:   "Let's make a 2D histogram"
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, R]
+categories: [dataAnalysis, python]
 ---
 
 <p>
