@@ -1,0 +1,23 @@
+---
+title: Priors
+layout: post
+author:     "JongHyun"
+header-img: "img/post-bg-06.jpg"
+categories: [dataAnalysis, statistics]
+---
+<p>
+	As we can see the detail of bayesian approach, there are influence from choosing the prior. <b>Our prior needs to represent our personal perpective, our belief and our uncertainties.</b> Theoretically, we are defining a cumulative distribution function for the parameter. 
+	$$P(c \le c) for\,all\,c\in R $$
+	From the above equation, this is true for all an infinite number of possible sets, we're defining probability. However, this is not practical to do and it would be very difficult to do coherently. Maybe, it is due to the complicated process to get probability.
+</p>
+<p>
+	Typically, reasonable prior will get up to same posterior when it has sufficient number of data sets. Of course there are exception case like extreme prior distribution.
+	$$P(\theta = \frac{1}{2})=1$$
+	This kind of prior will not be affected by any data sets. <b>Good bayesian doesn't assume that some event will happen certainly or not.</b> A useful concept in terms of choosing priors is that of calibration of <b>predictive interval</b>. Predictive interval is expected interval which will cover 95% data in the interval.
+</p>
+<p>
+	<b>We can calculate predictive interval by using equation of bayesian theorem. We will use denominator of the theorem.</b> It is probability density funciton including every case of theta. It is written in the below equation.
+	$$f(\theta|y)=\frac{f(y|\theta)f(\theta)}{\int f(y|\theta)f(\theta)d\theta}$$
+	$$f(y)=\int f(y|\theta)f(\theta)d\theta=\int f(y,\theta)d\theta$$
+	The last term is called joint density which is same with intersection. So, we can understand like this <b>"Predictive interval is the concept that calculating every possible theta value before measuring any data"</b>
+</p>
