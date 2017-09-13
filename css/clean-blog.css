@@ -5,8 +5,11 @@
  */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  /*font-family: 'Lora', 'Times New Roman', serif;*/
+  /*font-family: "Gidole-Regular";*/
+  /*src: url( '../_assets/fonts/Gidole-Regular.ttf') format( 'truetype');*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20 px;
   color: #404040;
 }
 p {
@@ -401,3 +404,13 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #0085a1;
 }
+
+blockquote{
+  margin-top:10px;
+}
+blockquote p{
+  margin-top:0;
+}
+blockquote ul{
+  padding-left:10px;
+} 

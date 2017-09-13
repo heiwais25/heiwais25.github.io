@@ -2,6 +2,7 @@
 title: 2d histogram(Using Matplotlib)
 subtitle:   "Let's make a 2D histogram"
 layout: post
+comments: true
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
 categories: [dataAnalysis, python]

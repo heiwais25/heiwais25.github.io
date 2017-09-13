@@ -23,3 +23,6 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
+
+# If you don't want to show disqus, add "comments:false"
+disqus: heiwais25-github-blog
