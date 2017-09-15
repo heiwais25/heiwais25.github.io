@@ -13,10 +13,13 @@ categories: [Web-programming]
 </p>
 <p>
 	<b>Second,</b> we need to setup jekyll. I'll assume you already install the ruby. Regardless of your OS, type this code into your terminal
-<pre><code>gem install jekyll bundler
+	{% prism ruby numbering %}
+gem install jekyll bundler
 jekyll new your_blog_name # Replace it with what you want for your blog name
 cd your_blog_name 
-jekyll serve </code></pre>
+jekyll serve
+	{% endprism %}
+
 	After typing <code>jekyll serve</code>, It will start to make your jekyll directory as a website. To see how it works, type <code>localhost:4000</code> in your browser. Then you can see your own blog!
 </p>
 
@@ -24,6 +27,9 @@ jekyll serve </code></pre>
 > In my case, there was issue like <code>Could not find jekyll-paginate</code> and <code>Could not find jekyll-feed</code>. After installing by gem install, This kind of problem will disappear. 
 
 <p>
-	<b>Finally,</b> the only thing left is uploading your nice blog to github. <pre><code>git push</code></pre>
+	<b>Finally,</b> the only thing left is uploading your nice blog to github. 
+	{% prism git numbering %}
+	git push
+	{% endprism %}
 	After this command, you can see your website which have same address with your repository. 
 </p>

@@ -1,5 +1,5 @@
 ---
-title: Nice pacakage of sublimetext 3
+title: Nice package of sublimetext 3
 layout: post
 comments: true
 author:     "JongHyun"
@@ -36,4 +36,6 @@ categories: [Web-programming]
 - Goto-CSS-Declaration
 - HTML-CSS-JS Prettify
 
+### Octave
+- GNU Octave Completions
 ...

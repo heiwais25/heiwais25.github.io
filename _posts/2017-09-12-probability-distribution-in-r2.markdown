@@ -34,11 +34,13 @@ t_{\nu}&dt(x,df)&df=\nu\\
 </p>
 <p>
 	Solution is like this.
-<pre><code>1. P(x=2) : dpois(2,2) = 0.271
-2. P(X>2) : 1 - ppois(2,2) = 0.323
-3. P(X<2) : ppois(2,2) = 0.677
-4. P(0.5<X<2) : pgamma(2,2,1/2) - pgamma(0.5,2,1/2) = 0.238
-5. P(X<z) = 0.8 : qnorm(.8, 0, 1) = 0.842
-6. P(-1.96 < X < 1.96) : pnorm(1.96, 0, 1) - pnorm(-1.96, 0, 1) = 0.950
-7. P(-z < X < z) = 0.98 : qnorm(0.99, 0, 1) = 2.32 # Due to its symmetry</code></pre>
+	{% prism R numbering %}
+	1. P(x=2) : dpois(2,2) = 0.271
+	2. P(X>2) : 1 - ppois(2,2) = 0.323
+	3. P(X<2) : ppois(2,2) = 0.677
+	4. P(0.5<X<2) : pgamma(2,2,1/2) - pgamma(0.5,2,1/2) = 0.238
+	5. P(X<z) = 0.8 : qnorm(.8, 0, 1) = 0.842
+	6. P(-1.96 < X < 1.96) : pnorm(1.96, 0, 1) - pnorm(-1.96, 0, 1) = 0.950
+	7. P(-z < X < z) = 0.98 : qnorm(0.99, 0, 1) = 2.32 # Due to its symmetry
+	{% endprism %}
 </p>
