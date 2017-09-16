@@ -21,6 +21,15 @@ categories: [dataAnalysis, machineLearning, octave]
 <p>
 	When the cost function value is located at local minimum, the process of gradient descent will stop. So, <b>we don't need to change learning rate while we run the gradient descent</b> because it will take smaller step as it approaches to local minimum
 </p>
+### With Linear Regression
+<p>
+    Let's apply the concept of gradient descent to linear regression more in detail. We can make partial deriavative more simple in the case of linear regression because it is simple. Maybe it would be different if the equation is quadratic or cubic form.  
+    $$\frac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) =  \frac{\partial}{\partial \theta_j} \frac{1}{2m}\Sigma^m_{i=1}(h_\theta (x^{(i)})-y^{(i)})^2$$
+    $$ = \frac{\partial}{\partial \theta_j}\frac{1}{2m}\Sigma^m_{i=1}(\theta_0+\theta_1 x^{(i)}-y^{(i)})^2$$
+    $$= \frac{1}{m} \Sigma^m_{i=1}(h_\theta(x^{(i)})-y^{(i)})+\frac{1}{m}\Sigma^m_{i=1}(h_\theta(x^{(i)})-y^{(i)})x^{(i)}$$
+    $$\text{If we set }\theta_0 = \theta_0 \cdot x^{(i)} _0, \theta_1 \cdot x^{(i)}= \theta_1 \cdot x^{(i)} _1$$
+    $$\text{Then, }\frac{\partial}{\partial \theta_j}J(\theta) = \frac{1}{m}\Sigma^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)}) x^{(i)} _j$$
+</p>
 
 
 
