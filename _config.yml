@@ -22,7 +22,7 @@ permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed, jekyll-gist]
+plugins : [jekyll-paginate, jekyll-feed, jekyll, jekyll-gist, mm-jekyll-prism]
 
 # If you don't want to show disqus, add "comments:false"
 disqus: heiwais25-github-blog
