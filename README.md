@@ -11,6 +11,11 @@ In the _config.yml file, the base URL is set to /startbootstrap-clean-blog-jekyl
 It should look like this:
 `baseurl: ""`
 
+|List item|  |
+|---------|--|
+|         |  |
+
+
 ## What's Included
 
 A full Jekyll environment is included with this theme. If you have Jekyll installed, simply run `jekyll serve` in your command line and preview the build in your browser. You can use `jekyll serve --watch` to watch for changes in the source files as well.
@@ -23,5 +28,5 @@ You can run `jekyll serve --watch` and `grunt watch` at the same time to watch f
 
 Visit Clean Blog's template overview page on Start Bootstrap at http://startbootstrap.com/template-overviews/clean-blog/ and leave a comment, email feedback@startbootstrap.com, or open an issue here on GitHub for support.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NzcxODE3XX0=
+eyJoaXN0b3J5IjpbMTE5Nzc2Nzg1N119
 -->
