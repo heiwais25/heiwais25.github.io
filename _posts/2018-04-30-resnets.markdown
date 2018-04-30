@@ -1,0 +1,41 @@
+---
+title: ResNets
+layout: post
+author:     "JongHyun"
+header-img: "img/post-bg-06.jpg"
+categories: [machineLearning, CNN]
+---
+### ResNet이 나오게 된 계기
+이론적으로 Deep Neural Network는 보다 복잡한 함수들을 표현할 수 있었기에 많은 사람들은 보다 Deep Layer 구조를 이용한 NN을 만들고자 했다. 하지만, 그들이 공통적으로 맞게 된 어려움은 Train이 잘 되지 않는다는 것이었다. 그 이유는 Gradient descent에서 사용하는 Back propagation이 weight를 계속해서 곱하며 이전 Layer로 가는 것인데, Layer가 많아질 수록 맨 앞의 Layer까지 적용되기 이전에 Gradient가 이미 거의 0에 가까워지기 때문이다. 즉, 아무리 결과가 다르더라도 Layer가 많다면 맨 앞의 Layer는 다른 결과로 부터 생기는 Gradient의 영향을 받지 못하고 변화하지 않는, Train이 되지 않는 것이다. 이러한 현상을 **Vanishing Gradient**라고 한다.
+
+### ResNet 개념
+ResNets은 이에 대한 문제점을 해결할 수 있게 해주는 새로운 Network구조인데, 기존의 Network(여기서는 Plain Network라고 한다.)와는 달리 **"shortcut"** 또는 **"skip connection"** 이라는 path를 만들어 gradient가 이전의 layer로 직접적으로 backpropagate할 수 있게 해준다. 그 적용은 간단한데, block의 input activation을 block의 마지막 non-linear 연산을 하기 전에 input activation을 더해주면 된다. block 내의 다른 연산을 하지 않고 마지막 non-linear 연산을 할 때만 더해주기에 **"shortcut"** 이라고 하는 것이다.
+
+
+$$
+    \begin{matrix}
+    \text{Layer} & \text{Plain Network} & \text{Residual Network} \\
+    l+1 & 
+    \begin{array}{l}z^{[l+1]} = w^{[l+1]}a^{[l]}+b^{[l+1]} \\ a^{[l+1]} = g(z^{[l+1]})\end{array} & 
+        \begin{array}{l}z^{[l+1]} = w^{[l+1]}a^{[l]}+b^{[l+1]} \\ a^{[l+1]} = g(z^{[l+1]})\end{array} &  \\
+    l+2 & 
+    \begin{array}{l}z^{[l+2]} = w^{[l+2]}a^{[l+1]}+b^{[l+2]} \\ a^{[l+2]} = g(z^{[l+2]})\end{array}  & 
+    \begin{array}{l}z^{[l+2]} = w^{[l+2]}a^{[l+1]}+b^{[l+2]} \\ a^{[l+2]} = g(z^{[l+2]} + a^{[l]})\end{array} \\
+    \end{matrix}
+$$
+
+### ResNet 구조
+
+위에서 보여준 것처럼 하나의 short cut이 존재하는 layer들을 하나의 block으로 정하고 residual network는 이 block들이 여러 번 사용되게 된다. block의 종류로는 block의 input activation과 output activation의 dimension이 같은지, 다른지에 따라 크게 **identity block**과 **convolution block** 2가지가 있다. 또한 하나의 block이 몇 개의 hidden layer를 "skip over"하는 지에 따라서도 달라지게 된다. 보통은 2개 또는 3개의 hidden layer를 skip over하며 convolution block의 뒤에 여러 개의 identity block을 붙인 구조를 사용하는 듯 하다.
+
+### Question
+1. ResNet paper에서 사용한 구조에서는 왜 Convolution block을 먼저 사용하고 뒤에 Identity block을 사용하고 있을까?
+2. 적당한 block의 갯수는 어떻게 잡을까?
+3. 어느정도의 Layer를 잡아야 할까?
+
+### Todo
+1. 논문 제대로 다시 읽어보기
+2. ResNet 구현 후 여러 DataSet에 다시 해보자
+
+### Ref
+1. Coursera 강의(Andrew Ng-deep Learning(CNN))
