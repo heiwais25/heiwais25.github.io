@@ -4,7 +4,7 @@ layout: post
 comments: true
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [Web-programming]
+categories: [Tip]
 ---
 <p>
 	I'm using sublimetext3 for various method. It is very useful with many package, easy to install and light. I'll introduce some useful pacakge I use. It can be divided by each purpose  

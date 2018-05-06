@@ -3,7 +3,7 @@ title: How to set up jekyll blog
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [Web-programming]
+categories: [Tip]
 ---
 <p>
 	Let's make your own blog. It is easy to make blog when we use jekyll and github. <b>Github have service that support representing the information included in github repository.</b> This blog is also an example of github blog. Jekyll is tool which can make our static blog much easily. This package is based on <b>ruby</b>.
