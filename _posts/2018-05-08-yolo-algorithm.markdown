@@ -39,15 +39,18 @@ $$\text{confidence} \times \text{class probs} \gt \text{Threshold}$$
 1. 어떻게 효과적으로 train data를 만들 수 있는지?  
 
 ### Todo
-1. Tensorflow에서 구현된 NMS말고 직접 NMS를 구현해보자
+1. **Tensorflow에서 구현된 NMS말고 직접 NMS를 구현해보자(O)**
 2. Pretrain된 data가 아니라 직접 train해보자
 
 ### Ref
 1.  Coursera 강의(Andrew Ng-deep Learning(CNN))
 2. Redmon et al., 2016 (https://arxiv.org/abs/1506.02640)
 3. Redmon and Farhadi, 2016 (https://arxiv.org/abs/1612.08242).
+
+### Related
+1. [Non-Maximum Suppression](/machinelearning/cnn/2018/05/10/non-maximum-suppression/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTUwODQxMCw4NTg5MTQ1NTQsLTUyNz
-I2NTEzLC0zNjY3MzM4NSwxMjc0MzQxNDg5LDExNDM2MjA0MDcs
-MTAzMTgwNTU5OF19
+eyJoaXN0b3J5IjpbMTI2NjczMjgxMywxNDg5NTA4NDEwLDg1OD
+kxNDU1NCwtNTI3MjY1MTMsLTM2NjczMzg1LDEyNzQzNDE0ODks
+MTE0MzYyMDQwNywxMDMxODA1NTk4XX0=
 -->
