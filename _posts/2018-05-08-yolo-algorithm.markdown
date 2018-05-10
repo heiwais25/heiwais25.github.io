@@ -47,7 +47,7 @@ $$\text{confidence} \times \text{class probs} \gt \text{Threshold}$$
 2. Redmon et al., 2016 (https://arxiv.org/abs/1506.02640)
 3. Redmon and Farhadi, 2016 (https://arxiv.org/abs/1612.08242).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4OTE0NTU0LC01MjcyNjUxMywtMzY2Nz
-MzODUsMTI3NDM0MTQ4OSwxMTQzNjIwNDA3LDEwMzE4MDU1OThd
-fQ==
+eyJoaXN0b3J5IjpbMTQ4OTUwODQxMCw4NTg5MTQ1NTQsLTUyNz
+I2NTEzLC0zNjY3MzM4NSwxMjc0MzQxNDg5LDExNDM2MjA0MDcs
+MTAzMTgwNTU5OF19
 -->
