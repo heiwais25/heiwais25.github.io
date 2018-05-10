@@ -9,9 +9,11 @@ categories: [machineLearning, CNN]
 
 ### YOLO
 YOLO의 의미는 **You look only once**라는 것으로 이 의미처럼 YOLO Algorithm은 한 번의 계산(Forward propagation)만으로 Object Detection을 성공적으로 수행한다.  이렇게 한 번에 object detection을 할 수 있기 때문에 Real time object detection 분야에도 많이 사용되고 있다. YOLO Algorithm에서 사용하는 Data에는 기존의 Classification과는 달리 단순 labeling 뿐만 아니라 다음과 같이 object를 포함하는 box의 정보까지 담고 있다. 즉, Train 과정에서 Error는 class label뿐만 아니라 box의 정보까지 포함하게 된다.
+
 ![Box labeling](/img/cnn/box_label.png)
 
 기본적인 구조는 앞에서 말한 것처럼 **CNN Implementation of sliding window**이며 추가적으로 정확도를 위해 **Anchor box**나 **Non max suppression**을 추가하게 된다. CNN의 결과물로 얻어지는 data는 각각의 window에 대한 계산값으로 하나하나를 **grid cell**로 생각해볼 수 있다. 각각의 grid cell에 object가 속하는지 안하는지의 여부는 object의 center / mid point가 grid cell에 속하는지 여부로 하며 하나의 cell에 여러개의 object가 속할 수도 있기 때문에 다양한 모양의 box 각각에 대해 계산을 진행한다. 여기서 언급된 다양한 모양의 box가 바로 **anchor box**로 예를 들면, 하나의 grid cell 에 속한 pedestrian과 car의 구분을 할 수 있게 해준다.(모양이 다르기 때문에)
+
 ![Architecture](/img/cnn/architecture.png)
 
 만약에 위의 그림처럼 `19 x 19`의 grid 하나하나에 4개의 anchor box가 있으며 총 20개의 80를 다루고 있다면 output of Deep CNN은 `(19 x 19 x 5 x 85)` shape이 된다. `(grid cell x # of anchor box x (confidence of object present, box location(left top, right bottom), # of classes)) `

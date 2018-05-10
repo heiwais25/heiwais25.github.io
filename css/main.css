@@ -32,3 +32,7 @@ blockquote ul{
 blockquote li{
 	font-size:16px;
 }
+
+img{
+  max-width: 100%;
+}
