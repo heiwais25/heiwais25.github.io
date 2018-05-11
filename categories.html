@@ -27,7 +27,7 @@ title: Categories
       <a href="javascript:toggleDiv('all');" id="all" class="tag_group" data-skillset data-code="etc">All</a>
       {% for category in site.categories %}
           {% capture category_name %}{{ category | first }}{% endcapture %}
-          <a href="javascript:toggleDiv('{{ category_name | slugize }}');" id="{{ category_name | slugize }}" class="tag_group" data-skillset data-code="etc">{{ category_name | capitalize }}</a>
+          <a href="javascript:toggleDiv('{{ category_name | slugize }}');" id="{{ category_name | slugize }}" class="tag_group" data-skillset data-code="etc">{{ category_name | upcase }}</a>
       {% endfor %}
     </div>
 
