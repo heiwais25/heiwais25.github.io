@@ -38,3 +38,12 @@ img{
   display: block;
   margin:auto;
 }
+
+code{
+  color:#039be5;
+  background:#f7f7f7;
+}
+
+h3 code{
+  background:white;  
+}
