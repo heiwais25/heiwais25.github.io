@@ -3,7 +3,8 @@
 }
 
 p, form, li {
-  font-family: 'Nanum Gothic', serif;
+  /*font-family: 'Nanum Gothic', serif;*/
+  font-family: 'Malgun Gothic',sans-serif;
   /*font-size:19px;*/
   line-height: 1.67;
   text-align: justify;
@@ -11,9 +12,35 @@ p, form, li {
 }
 
 h1, h2, h3, h4, h5{
-	margin:20px;
+	margin:40px;
 	margin-top:40px;
+  margin-left:0px;
 }
+
+h2{
+  margin-top:50px;
+  margin-bottom: 40px;
+}
+
+
+h3{
+  margin-top:80px;
+}
+
+hr{
+  margin-top:50px;
+}
+
+hr + h3{
+  margin-top:40px;
+}
+
+
+h4 + h4, h2 + h3{
+  margin-top:0px;
+}
+
+
 
 /* footer용 font로 쓰일 클래스는 신규추가 */
 .footer-text {
@@ -47,3 +74,18 @@ code{
 h3 code{
   background:white;  
 }
+
+#img_block{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+em {
+  text-align: center;
+  font-size: .8em;
+  color: $grey-color-light;
+}
+
+img.alignleft{float:left};
+img.alignright{float:right};
+img.aligncenter{display:block;margin:0 auto}
