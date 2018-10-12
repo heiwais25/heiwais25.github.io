@@ -35,7 +35,7 @@ Bad character rule은 **비교가 실패한 T의 character를 이용하는 rule*
 다음 그림을 보면 보다 쉽게 이해할 수 있다.
 
 <p id="img_block" style="text-align: center">
-<img src="/img/algorithm/boyer_moore/sample_0.png" alt="algorithm sample">
+<img src="/img/algorithm/boyer_moore/sample_0.PNG" alt="algorithm sample">
 <em>Bad character rule example</em>
 </p>
 
@@ -103,7 +103,7 @@ Bad character rule과는 다르게 Good suffix rule은 이름에서 알 수 있�
 Case 1은 이미 검사한 t와 일치하는 string이 P 내부에 여러 개 존재할 수 있음을 이용하는 것이다. 이를 적용하는 방법은 간단한데, **T와 P의 불일치가 일어난 경우 이미 확인된 t와 일치하는 string을 P에서 찾고 만약 있다면 해당 index 차이만큼 shift시키는 것이다.** 아래 그림을 보면 보다 명확하게 이해할 수 있다. 하지만, 이 방식은 Boyer-Moore의 weak rule case로 생각보다 효율적이지 않다. 보다 뒤에서 이를 개량한 strong rule을 다뤄보겠다.
 
 <p id="img_block" style="text-align: center">
-<img src="/img/algorithm/boyer_moore/good_suffix_0.png" alt="good_suffix_case_1">
+<img src="/img/algorithm/boyer_moore/good_suffix_0.PNG" alt="good_suffix_case_1">
 <em>Good suffix rule case 1 example</em>
 </p>
 
@@ -111,7 +111,7 @@ Case 1은 이미 검사한 t와 일치하는 string이 P 내부에 여러 개 �
 Case 2는 Case 1처럼 정확히 일치하는 string을 찾는 것이 아니라 P의 prefix와 일치하는 t의 suffix를 찾고 불일치가 일어났을 때 해당 index로 shift하는 것이다. 
 
 <p id="img_block" style="text-align: center">
-<img src="/img/algorithm/boyer_moore/good_suffix_1.png" alt="good_suffix_case_2">
+<img src="/img/algorithm/boyer_moore/good_suffix_1.PNG" alt="good_suffix_case_2">
 <em>Good suffix rule case 2 example</em>
 </p>
 
@@ -119,7 +119,7 @@ Case 2는 Case 1처럼 정확히 일치하는 string을 찾는 것이 아니라 
 Case 3는 match되었던 string t에 대해서 위의 Case 1, Case 2가 해당되지 않는 경우이다. 이 때는, Pattern의 앞 부분을 확인할 필요가 없기 때문에 Pattern을 길이만큼 shift시킨다. 
 
 <p id="img_block" style="text-align: center">
-<img src="/img/algorithm/boyer_moore/good_suffix_2.png" alt="good_suffix_case_3">
+<img src="/img/algorithm/boyer_moore/good_suffix_2.PNG" alt="good_suffix_case_3">
 <em>Good suffix rule case 3 example</em>
 </p>
 
@@ -127,7 +127,7 @@ Case 3는 match되었던 string t에 대해서 위의 Case 1, Case 2가 해당�
 이 방식은 앞에서 말한 Case 1과 거의 흡사하다. 하지만, 차이점은 P 내에 t와 일치하는 string이 있다면 바로 이동시키는 것이 아니라 일치하는 string 바로 앞의 문자까지 확인함으로써 불필요한 확인을 막아준다. 다시 말해서, t와 동일한 string 앞의 문자가 mismatch가 일어난 문자와 같은 경우를 무시함으로써 효율을 높이는 것이다.
 
 <p id="img_block" style="text-align: center">
-<img src="/img/algorithm/boyer_moore/good_suffix_3.png" alt="good_suffix_case_0_strong">
+<img src="/img/algorithm/boyer_moore/good_suffix_3.PNG" alt="good_suffix_case_0_strong">
 <em>Strong good suffix rule example</em>
 </p>
 
