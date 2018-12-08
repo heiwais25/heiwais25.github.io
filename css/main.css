@@ -40,7 +40,9 @@ h4 + h4, h2 + h3{
   margin-top:0px;
 }
 
-
+pre{
+  font-size:15px;
+}
 
 /* footer용 font로 쓰일 클래스는 신규추가 */
 .footer-text {

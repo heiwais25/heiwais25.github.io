@@ -1,0 +1,76 @@
+---
+title: PyQT Tips
+layout: post
+author:     "JongHyun"
+header-img: "img/pyqt/pyqt_main.png"
+categories: [Python]
+---
+
+## PyQT 꿀팁들
+
+1. **Default로 나타나는 Text를 설정하고 싶은 경우**, `setPlaceholderText()`를 사용
+    <pre><code class="language-python">lineEdit.setPlaceholderText("Default Text")</code></pre>
+
+2. Editable combobox를 설정한 후에, **User가 입력하는 input에 따라서 autocomplete를 제공하고 싶은 경우**, `completer`를 사용한다. [출처](https://stackoverflow.com/questions/22125933/how-to-create-autocomplete-combobox-in-pyqt4)
+    <pre><code class="language-python">combobox.completer().setCompletionMode(QtGui.QCompleter.PopupCompletion)  
+</code></pre>
+
+3. **qt의 GUI style을 바꾸고 싶은 경우**, 직접 style css를 지정해주어도 되지만 기본적으로 제공되는 style들이 있다.
+- PyQT 5 : `['Windows', 'windowsvista', 'Fusion']`
+    ※ `QStyleFactory.keys()`를 통해 가능한 option을 알 수 있다.
+    ※ 개인적으로는 `Fusion` option을 가장 좋아한다.
+    <pre><code class="language-python">QStyleFactory.create('option 이름')  
+</code></pre>
+
+4. **특정 Widget의 지정된 event에 대한 action을 설정하고 싶은 경우**에는 `특정widget.event_name.connect(user_function)`을 사용할 수 있다.
+    예를 들어, `comboBox`의 Text가 바뀐 event를 처리하고 싶은 경우에는 다음과 같이 설정할 수 있다.
+    <pre><code class="language-python">comboBox.currentTextChanged.connect(user_function)</code></pre>
+
+5. 기존에 정의된 eventHandler가 아니라 **자신이 원하는 대로 event를 처리하고 싶은 경우**에는 `installEventFilter(user_filter)`를 이용할 수 있다. 이 method의 인수로는 `QObject`를 상속한 class를 사용하면 된다. 
+    예를 들어, 특정 widget에 있다가 `FocusOut`의 경우에 대해 처리하고 싶은 경우에는 다음과 같이 class를 만들어 주면 된다. 다른 event에 대해서도 아래의 예제를 바꿔서 사용하면 될 것이다.
+    <pre><code class="language-python">class  Filter(QObject):
+        def  eventFilter(self, widget, event):
+            # Capture when user change its focus
+            if event.type() == QEvent.FocusOut:
+                '''
+                    User action
+                '''
+                # Bool value should be returned to indicate it is finished
+                return  False 
+            else:
+                return  False  
+</code></pre>
+
+6. **`TextBrowser`에 html 형식 text를 채워넣고 싶은 경우**에는 다음과 같이 지정할 수 있다.
+    <pre><code class="language-python">textBrowser.document().setHtml(html 형식 text)
+</code></pre>
+
+7. **`TableWidget`의 item들을 원하는 방식대로 정렬하고 싶은 경우,** `QTableWidgetItem`을 상속하는 새로운 class를 widgetItem으로 사용함으로써 원하는 대로 정렬할 수 있다. 
+    예를 들면, 기존의 정렬 방식은 ASCII기반이기 때문에 숫자가 크건 작건 맨 앞 숫자에 의해 정렬이 되게 된다. 이를 숫자의 크기를 기반으로 정렬하기 위해서는 다음과 같이 정의된 class를 사용할 수 있다.
+    <pre><code class="language-python">MyTableWidgetItem(QTableWidgetItem):
+    def  __lt__(self, other):   
+        if ( isinstance(other, QTableWidgetItem) ):
+            my_value =  str(self.data(Qt.EditRole))
+            other_value =  str(other.data(Qt.EditRole))
+            if my_value.isdigit():
+                my_value =  int(my_value)
+                other_value =  int(other_value)
+            return my_value < other_value
+        return  super(MyTableWidgetItem, self).__lt__(other)
+</code></pre>
+
+8. **현재 `TableWidget`의 item을 원하는 방향(내림차순, 오름차순)으로 정렬하고 싶은 경우,** `sortItems`를 사용한다.
+    예를 들어, 내림차순(DescendingOrder)으로 정렬하고 싶다면 다음과 같이 설정할 수 있다.
+    <pre><code class="language-python"># Table의 특정 column의 item을 기준으로 정렬 
+    tableWidget.sortItems(column, Qt.DescendingOrder)</code></pre>
+
+
+
+<style>
+    .post-heading h1, .post-heading span, #bs-example-navbar-collapse-1 a, .navbar-custom .navbar-brand{
+        color:black;
+    }
+    div>ol>li{
+        margin-top:40px;
+    }
+</style>
