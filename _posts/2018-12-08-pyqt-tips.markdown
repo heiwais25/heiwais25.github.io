@@ -3,7 +3,7 @@ title: PyQT Tips
 layout: post
 author:     "JongHyun"
 header-img: "img/pyqt/pyqt_main.png"
-categories: [Python]
+categories: [python]
 ---
 
 ## PyQT 꿀팁들
