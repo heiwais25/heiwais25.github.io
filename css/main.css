@@ -1,93 +1,105 @@
-#disqus_thread{
-	margin-top:20px;
+#disqus_thread {
+  margin-top: 20px;
 }
 
-p, form, li {
+p,
+form,
+li {
   /*font-family: 'Nanum Gothic', serif;*/
-  font-family: 'Malgun Gothic',sans-serif;
+  font-family: "Malgun Gothic", sans-serif;
   /*font-size:19px;*/
   line-height: 1.67;
   text-align: justify;
-  margin-top:12px;
+  margin-top: 12px;
 }
 
-h1, h2, h3, h4, h5{
-	margin:40px;
-	margin-top:40px;
-  margin-left:0px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 40px;
+  margin-top: 40px;
+  margin-left: 0px;
 }
 
-h2{
-  margin-top:50px;
+h2 {
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 
-
-h3{
-  margin-top:80px;
+h3 {
+  margin-top: 80px;
 }
 
-hr{
-  margin-top:50px;
+hr {
+  margin-top: 50px;
 }
 
-hr + h3{
-  margin-top:40px;
+hr + h3 {
+  margin-top: 40px;
 }
 
-
-h4 + h4, h2 + h3{
-  margin-top:0px;
+h4 + h4,
+h2 + h3 {
+  margin-top: 0px;
 }
 
-pre{
-  font-size:15px;
+pre {
+  font-size: 15px;
 }
 
 /* footer용 font로 쓰일 클래스는 신규추가 */
 .footer-text {
-  font-family: 'Jeju Gothic', serif;
+  font-family: "Jeju Gothic", serif;
   font-size: 16px;
 }
 
-blockquote{
-	padding:0px;
+/* blockquote {
+  padding: 0px;
+} */
+
+blockquote ul {
+  padding-left: 40px;
 }
 
-blockquote ul{
-	padding-left:40px;
+blockquote li {
+  font-size: 16px;
 }
 
-blockquote li{
-	font-size:16px;
-}
-
-img{
+img {
   max-width: 100%;
   display: block;
-  margin:auto;
+  margin: auto;
 }
 
-code{
-  color:#039be5;
-  background:#f7f7f7;
+code {
+  color: #039be5;
+  background: #f7f7f7;
 }
 
-h3 code{
-  background:white;  
+h3 code {
+  background: white;
 }
 
-#img_block{
-  margin-top:50px;
-  margin-bottom:50px;
+#img_block {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 em {
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
   color: $grey-color-light;
 }
 
-img.alignleft{float:left};
-img.alignright{float:right};
-img.aligncenter{display:block;margin:0 auto}
+img.alignleft {
+  float: left;
+}
+img.alignright {
+  float: right;
+}
+img.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
