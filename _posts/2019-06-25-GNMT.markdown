@@ -1,0 +1,10 @@
+---
+title: Google's Neural Machine Translation System 리뷰
+layout: post
+author: "JongHyun"
+header-img: "img/nlp/word.jpg"
+categories: [nlp]
+---
+
+> - 저자 : Minh-Thang Luong Hieu Pham Christopher D. Manning
+> - 링크 : [Arxiv.1508.04025](https://arxiv.org/abs/1508.04025)
