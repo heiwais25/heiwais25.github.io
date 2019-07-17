@@ -3,7 +3,7 @@ title: Statistical Inference 2
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	Let's deal with bayesian theorem more detail. In the equation, It is often hard to calculate integral of denominator. Actually, the denominator is the meaning of normalizing const. So, the important part is numerator side. 

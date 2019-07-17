@@ -3,7 +3,7 @@ title: Classification 1(Introduction)
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 <p>
 	<span style="display:inline-block; width: 30px;"></span>In the <b>supervised learning</b>, there are two main categories. One is <b>regression</b> which is predicting value of input value based on previous training sets. The other is <b>classification</b> which is classifying input value into yes or no. The example of classification is determining whether the tumor is maligant or benign. I already dealt with regression <a href="https://heiwais25.github.io/dataanalysis/machinelearning/octave/2017/09/15/cost-function/">before</a>. Simply, the classification is used when we have discrete ouput. The simplest case is two output case. Also, there are multi output case which is called multi-class problem. We can represent classification case like this

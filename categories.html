@@ -5,79 +5,91 @@ title: Categories
 ---
 
 <style>
-  .tag_group{
-    font-family: 'Nanum Gothic', serif;
-    display:inline-block;
-    margin-top:3px;
+  .tag_group {
+    font-family: "Nanum Gothic", serif;
+    display: inline-block;
+    margin-top: 3px;
     padding: 2px 8px 0;
     background-color: #ebebeb;
     vertical-align: top;
     text-decoration: none;
   }
-  a:link{text-decoration: none;}
-  a:visited{text-decoration: none;}
-  a:hover{text-decoration: none; }
-
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 </style>
-
 
 <div>
   <div id="archives">
     <div class="tag_group_top">
-      <a href="javascript:toggleDiv('all');" id="all" class="tag_group" data-skillset data-code="etc">All</a>
-      {% for category in site.categories %}
-          {% capture category_name %}{{ category | first }}{% endcapture %}
-          <a href="javascript:toggleDiv('{{ category_name | slugize }}');" id="{{ category_name | slugize }}" class="tag_group" data-skillset data-code="etc">{{ category_name | upcase }}</a>
+      <a
+        href="javascript:toggleDiv('all');"
+        id="all"
+        class="tag_group"
+        data-skillset
+        data-code="etc"
+        >All</a
+      >
+      {% for category in site.categories %} {% capture category_name %}{{
+        category | first
+      }}{% endcapture %}
+      <a
+        href="javascript:toggleDiv('{{ category_name | slugize }}');"
+        id="{{ category_name | slugize }}"
+        class="tag_group"
+        data-skillset
+        data-code="etc"
+        >{{ category_name }}</a
+      >
       {% endfor %}
     </div>
 
-  {% for category in site.categories %}
+    {% for category in site.categories %}
     <div class="archive-group">
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <div id="{{ category_name | slugize }}" class="group_context">
-      <h2>{{ category_name | capitalize }}</h2>
-      {% for post in site.categories[category_name] %}
-        <li> <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a><span style="float: right">{{ post.date | date_to_string }}</span></li>
-      {% endfor %}
-      <br><br>
+        <h2>{{ category_name }}</h2>
+        {% for post in site.categories[category_name] %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a
+          ><span style="float: right">{{ post.date | date_to_string }}</span>
+        </li>
+        {% endfor %}
+        <br /><br />
       </div>
     </div>
-  {% endfor %}
+    {% endfor %}
   </div>
 </div>
 
 <script type="text/javascript">
-function toggleDiv(divId) {
+  function toggleDiv(divId) {
+    $(".tag_group").each(function() {
+      if ($(this).attr("id") == divId) {
+        this.style.backgroundColor = "black";
+        this.style.color = "white";
+      } else {
+        this.style.backgroundColor = "#ebebeb";
+        this.style.color = "black";
+      }
+    });
 
-  $('.tag_group').each(function(){
-    if($(this).attr("id") == divId){
-      this.style.backgroundColor = 'black';
-      this.style.color = 'white';
-    }
-    else{
-      this.style.backgroundColor = '#ebebeb';
-      this.style.color = 'black';
-    }
-
-  });
-
- $('.group_context').each(function(){
-  if(divId == "all"){
-    $(this).show(600);
+    $(".group_context").each(function() {
+      if (divId == "all") {
+        $(this).show(600);
+      } else {
+        if ($(this).attr("id") == divId) {
+          $(this).show(600);
+        } else {
+          $(this).hide(600);
+        }
+      }
+    });
   }
-  else{
-    if($(this).attr("id") == divId){
-      $(this).show(600);
-    }
-    else{
-      $(this).hide(600);
-    }  
-  }
-  
- });
-}
-
-
-
-
 </script>

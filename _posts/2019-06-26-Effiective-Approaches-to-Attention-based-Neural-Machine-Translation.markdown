@@ -3,7 +3,7 @@ title: Effective Approaches to Attention-based Neural Machine Translation 리뷰
 layout: post
 author: "JongHyun"
 header-img: "img/nlp/word.jpg"
-categories: [nlp]
+categories: [NLP]
 ---
 
 > - 저자 : Minh-Thang Luong Hieu Pham Christopher D. Manning

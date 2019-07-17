@@ -3,7 +3,7 @@ title: Statistical Inference 1
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	Let's think about betting with brother. Your brother brought certain coin. You don't know that coin is loaded or fair. If coin is loaded, the probability for showing 

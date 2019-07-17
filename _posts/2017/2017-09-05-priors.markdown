@@ -3,7 +3,7 @@ title: Priors
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	As we can see the detail of bayesian approach, there are influence from choosing the prior. <b>Our prior needs to represent our personal perpective, our belief and our uncertainties.</b> Theoretically, we are defining a cumulative distribution function for the parameter. 

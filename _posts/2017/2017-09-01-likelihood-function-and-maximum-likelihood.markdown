@@ -3,7 +3,7 @@ title: Likelihood function and maximum likelihood
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	&nbsp;&nbsp;&nbsp;Let's think of the case of one hospital. There are 400 patient of heart attack in the hospital. 

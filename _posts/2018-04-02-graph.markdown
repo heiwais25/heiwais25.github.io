@@ -3,7 +3,7 @@ title: Graph
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [algorithm]
+categories: [Algorithm]
 ---
 - 그래프는 여러 자료구조들 중에 표현 능력이 가장 뛰어나며 노드(vertex, node)와 간선(edge)을 이용해 쉽게 모델링을 할 수 있다. 보통 표현의 주가 되는 사물, 대상이 **node**로 표현되면 대상들간의 관계를 **edge**로 표현하게 된다. 즉, 그래프는 node와 edge의 집합으로 생각할 수 있다. 방향성에 따라 그래프의 종류를 나눌 수 있는데, 방향이 있으면 directional graph, 없으면 undirectional graph로 볼 수 있다. 
 - Edge에는 단순 node간의 연결 정보만이 포함된 것이 아니라, "도로의 길이" "이동 시간"등을 표현하는 **가중치(weight)**를 가지고 있다. 이렇게, Weight를 이용하는 그래프를 가중치 그래프(Weighted graph)라고 한다.

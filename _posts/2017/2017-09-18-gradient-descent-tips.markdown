@@ -3,7 +3,7 @@ title: Gradient Descent Tips
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 <p>
 	If you use linear regressions of <a href="/dataanalysis/machinelearning/octave/2017/09/15/gradient-descent/">multiple features</a>, you can use these tips to decrease time required to find local minimum. The main point is simple. We need to make scale of features similar with each other by using some method. One is <b>Feature scaling.</b> The other is <b>Mean normalization.</b> Of course we can use both together.

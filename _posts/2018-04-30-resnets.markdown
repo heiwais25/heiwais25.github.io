@@ -3,7 +3,7 @@ title: ResNets
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning, CNN]
+categories: [Machine Learning, CNN]
 ---
 ### ResNet이 나오게 된 계기
 이론적으로 Deep Neural Network는 보다 복잡한 함수들을 표현할 수 있었기에 많은 사람들은 보다 Deep Layer 구조를 이용한 NN을 만들고자 했다. 하지만, 그들이 공통적으로 맞게 된 어려움은 Train이 잘 되지 않는다는 것이었다. 그 이유는 Gradient descent에서 사용하는 Back propagation이 weight를 계속해서 곱하며 이전 Layer로 가는 것인데, Layer가 많아질 수록 맨 앞의 Layer까지 적용되기 이전에 Gradient가 이미 거의 0에 가까워지기 때문이다. 즉, 아무리 결과가 다르더라도 Layer가 많다면 맨 앞의 Layer는 다른 결과로 부터 생기는 Gradient의 영향을 받지 못하고 변화하지 않는, Train이 되지 않는 것이다. 이러한 현상을 **Vanishing Gradient**라고 한다.

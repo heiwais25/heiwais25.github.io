@@ -3,7 +3,7 @@ title: Cost function
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning, octave]
+categories: [Data Analysis, Machine Learning, octave]
 ---
 <p>
 	As I said in <a href="/dataanalysis/machinelearning/octave/2017/09/15/basic-concept-of-supervised-learning/">previous post</a>, we can use <b>cost function</b> to find the proper hypothesis which can explain data sets well. I brought simple data sets of woman age and height. 

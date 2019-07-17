@@ -3,7 +3,7 @@ title: Posterior interval of interest
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	We may want to ask when we want to deal with important area of posterior interval or <b>what is a interval that contains 95% of posterior probability in some meaningful way.</b> This would be equivalent to a frequent confident interval in a concept. There are two famous way. One is <b>equal tailed interval</b> and another is <b>HPD(Highest posterior density)</b>

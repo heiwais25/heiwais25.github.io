@@ -3,7 +3,7 @@ title: Classification 3(Multi class)
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 <p>
 	<span style="display:inline-block; width: 30px;"></span>In the classification, there are binary class classification and multi class classification. I already dealt with binary calss classfication <a href="/dataanalysis/machinelearning/2017/09/25/classification/">before.</a> Now let's talk about multi class classification. <b>Simply, multi class classification is used when there are discrete output and the number of output is larger than 2.</b> Multi class classification can be found easily in the world. For example, email-folding / tagging, medical diagram, wether forecasting and so on. The simplest multi class case would be 3 class case like below plot.

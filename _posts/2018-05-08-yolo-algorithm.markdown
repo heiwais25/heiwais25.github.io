@@ -3,7 +3,7 @@ title: YOLO Algorithm
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning, CNN]
+categories: [Machine Learning, CNN]
 ---
 이전 [Post](/machinelearning/cnn/2018/05/08/object-detection/)에서는  Object detection에서는 Sliding window는 굉장히 좋은 방법이었지만 Computation cost가 큰 문제가 있었고 이를 해결하기 위해 CNN Implementation이 있다고 했다. 이를 적용한 Algorithm 중에는 굉장히 유명한 YOLO Algorithm이 있다.
 

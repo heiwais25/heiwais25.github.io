@@ -3,7 +3,7 @@ title: Probability distribution in R(1)
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [R, dataAnalysis, statistics]
+categories: [R, Data Analysis, statistics]
 ---
 <p>
 	We can calculate and plot many probability distribution function using R. Let's start from basic distribution. Normally, there are 4 main application using distribution. <b>We can evaluate PDF, CDF and quantile function. Also we can generate pseudo-random samples.</b> 

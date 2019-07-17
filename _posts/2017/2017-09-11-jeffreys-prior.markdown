@@ -3,7 +3,7 @@ title: Jeffreys prior
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	When we consider choosing prior, there might be different prior but same kind of distribution. Although it is same kind of distribution, they will lead us to different posterior. Let's see uniform distribution example in the normal distribution. 

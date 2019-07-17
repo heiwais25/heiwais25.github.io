@@ -3,7 +3,7 @@ title: brief introduction of distribution
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 ## Discrete parameter case
 ### 1) Bernouilli distribution

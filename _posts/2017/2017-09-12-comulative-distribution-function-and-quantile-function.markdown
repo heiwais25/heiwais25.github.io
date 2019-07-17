@@ -3,7 +3,7 @@ title: Cumulative distribution function and Quantile function
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 ### Cumulative distribution function
 <p>

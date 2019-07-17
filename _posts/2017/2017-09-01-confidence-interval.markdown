@@ -3,7 +3,7 @@ title: Confidence interval
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	&nbsp;&nbsp;&nbsp;Let's assume we fliped coin 100 times and get the result of 44 Head and 56 Tail. The question is can we believe this coin is fair.

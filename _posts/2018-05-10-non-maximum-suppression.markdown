@@ -3,7 +3,7 @@ title: Non-Maximum Suppression
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning, CNN]
+categories: [Machine Learning, CNN]
 ---
 [YOLO](/machinelearning/cnn/2018/05/08/yolo/)와 같은 Object detection을 구현하다보면 하나의 Object에 대한 복수의 Detection이 가능하다. 이는, Object detection의 정확도를 떨어뜨릴 수 있는 요소이기 때문에 해결해 주어야하는데 이를 위해 사용되는 방법이 **Non-Maximum Suppression(NMS)**이다. NMS는 YOLO post에서도 언급을 했었는데, 핵심 아이디어는 다음과 같이 간단하다. 
 > 1. 주어진 Box들 중 가장 높은 Score를 가진 Box를 선택한다.

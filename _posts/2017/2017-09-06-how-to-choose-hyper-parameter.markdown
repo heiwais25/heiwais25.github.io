@@ -3,7 +3,7 @@ title: How to choose hyper parameter
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	We already dealt with hyper parameter in previous several post. It is parameter of prior distribution. The prior distribution is influenced by how we choose these hyper parameters. There are two main startegies how to choose hyper parameter

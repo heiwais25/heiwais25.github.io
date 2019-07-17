@@ -3,7 +3,7 @@ title: Classification 2(Cost function)
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 <p>
 	<span style="display:inline-block; width: 30px;"></span>We have already dealt with cost function in the linear regression. It's objective is measuring how mcuh different hypthesis with training set. In linear regression, the cost function was the form of square of difference. It works well in linear regression. However, logistic regression or classification case can not use linear regression because it has many local minimum and it is hard to find global minimum. In other word, square of difference works well only when the cost function shows "convex" form which have only one global minimum. So, we need new cost function which is suit for logistic regression. It needs to represent the characteristics of logistic regression.

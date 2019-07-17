@@ -3,7 +3,7 @@ title: NMT By Jointly Learning To Align And Translate 리뷰
 layout: post
 author: "JongHyun"
 header-img: "img/nlp/word.jpg"
-categories: [nlp]
+categories: [NLP]
 ---
 
 > 5년이나 지났지만 기초부터 다지자는 생각에 이 논문을 시작으로 NLP 관련 논문들을 부족하지만 리뷰해보고자 합니다. 틀린 내용에 대한 이야기는 언제든지 환영합니다.

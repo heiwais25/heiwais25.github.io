@@ -3,7 +3,7 @@ title: How to use libpng library
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [C, ImageProcess]
+categories: [C, Image Process]
 ---
 ### What is libpng?
 <p> 

@@ -3,7 +3,7 @@ title: Predictive interval 2
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 This is continuous post to <a href="/dataanalysis/statistics/2017/09/05/predictive-interval-1/">Predictive interval 1</a>
 <p>

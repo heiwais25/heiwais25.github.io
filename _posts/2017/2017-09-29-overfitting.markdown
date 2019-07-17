@@ -3,14 +3,14 @@ title: Overfitting
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 ### Overfitting
 <p>
     <span style="display:inline-block; width: 30px;"></span><b>Overfitting</b> is one of the main difficulties in machin learning. It shows that many training sets or many features are not always the solution. If we get too many features, we might be able to fit our training sets to hypothesis well. However, there are also possibility that fails to new example. So, overfitting means when the hypothesis becomes useless although we have many features and fit well. Fortunately, there are some solution which can decrease the effect of overfitting.
 </p>
 
-> Machine learning is kind of fight that trying to find equilibrium between **under fit(less features, low order, High bias)** and **over fit(too many features, high order, high variance : due to higher order)**
+> Machine Learning is kind of fight that trying to find equilibrium between **under fit(less features, low order, High bias)** and **over fit(too many features, high order, high variance : due to higher order)**
 
 ### Regularization
 <p>

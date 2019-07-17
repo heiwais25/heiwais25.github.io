@@ -3,7 +3,7 @@ title: Non-informative priors
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	There are another method trying to decrease the effect of prior and maximize the effect of data. It is called non-informative priors. What is informative or non-informative? We can see this kind of example to understand non-informative. The question in below is how do we minimize our informaition on theta.

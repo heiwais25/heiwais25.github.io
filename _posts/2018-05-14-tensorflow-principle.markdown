@@ -3,7 +3,7 @@ title: Tensorflow principle
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning]
+categories: [Machine Learning]
 ---
 
 ### Dataflow graph

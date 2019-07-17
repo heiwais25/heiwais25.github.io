@@ -226,7 +226,7 @@ hr.small {
   color: #0085a1;
 }
 .post-preview > a > .post-title {
-  font-size: 0.3rem;
+  font-size: 24px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -253,7 +253,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
     line-height: normal;
-    font-size: 3rem;
+    font-size: 24px;
   }
 }
 .section-heading {

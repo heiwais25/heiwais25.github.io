@@ -3,7 +3,7 @@ title: Basic concept of supervised learning
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning, octave]
+categories: [Data Analysis, Machine Learning, octave]
 ---
 ### What is supervised learning?
 <p>

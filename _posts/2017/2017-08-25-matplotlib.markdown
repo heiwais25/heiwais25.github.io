@@ -5,7 +5,7 @@ layout: post
 comments: true
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, python]
+categories: [Data Analysis, python]
 ---
 
 <p>

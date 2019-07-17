@@ -3,7 +3,7 @@ title: Keras example with MNIST
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning]
+categories: [Machine Learning]
 ---
 이 Post는 Google I/O 2018에서 **Colab**을 이용한 간단한 neural network를 만드는 것을 보고 정리겸 만든 것이다. 간단하게 하나의 Neural network를 만들어내는 과정은 Keras의 강력한 모습을 보여주는 것 같다. **MNIST**를 이용한 Hand writing(0~9까지의 숫자) 인식 network는 보통 머신러닝에서 Hello world처럼 여겨지는 것으로 모델을 간단히 시험해보기에는 최적의 대상이라고 생각된다. 아래의 코드를 이용하면 굉장히 간단하게 직접 NN을 만들어낼 수 있다. 구조는 크게 다음과 같이 나눌 수 있다.
 > 1. Get dataset

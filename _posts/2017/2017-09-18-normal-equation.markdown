@@ -3,7 +3,7 @@ title: Normal equation
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 <p>
 	We studied <b>gradient descent</b> before. It is aiming at finding the feature value which make local minimum of cost function by repeating substitution of features and differentiation of cost function. There are also another method to find proper parameter of hypothesis which is called <b>normal equation method.</b>

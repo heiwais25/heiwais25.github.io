@@ -3,7 +3,7 @@ title: Predictive interval 1
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	Let's start from the binomial example which is the simplest one. The example is how many heads predictive to see when we flip coin ten times and count the number of heads. To proceed the calculation, we need to choose priors of theta distribution.

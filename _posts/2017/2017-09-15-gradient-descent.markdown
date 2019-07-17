@@ -3,7 +3,7 @@ title: Gradient descent
 layout: post
 author:     "JongHyun"
 header-img: "img/machine_learning_backboard.jpg"
-categories: [dataAnalysis, machineLearning]
+categories: [Data Analysis, Machine Learning]
 ---
 ### Gradient descent
 <p>

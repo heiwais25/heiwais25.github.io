@@ -3,7 +3,7 @@ title: Probability distribution in R(2)
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [R, dataAnalysis, statistics]
+categories: [R, Data Analysis, statistics]
 ---
 <p>
 	As we can see in the previous <a href="/r/dataanalysis/statistics/2017/09/12/probability-distribution-in-r1/"></a>post, we can calculate and plot distribution easily. Because there are so many distribution function, Let's deal with other distribution example. 

@@ -3,7 +3,7 @@ title: Inception Network
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning, CNN]
+categories: [Machine Learning, CNN]
 ---
 ### Inception Network Motivation
 Inception Network는 그때 그때 적절한 filter size, pooling layer 등의 선택을 하는 것은 어렵기 때문에, 어느 특정한 filter size를 사용하는 것을 결정하는 것이 아니라 한꺼번에 다 사용하자는 아이디어를 가지고 있다. **즉, 2x2, 3x3, 5x5, max pooling등의 가능한 방법들을 따로따로 적용한 후에 그 결과물을 concatenate 함으로써 결과물을 얻자**는 것인데, 다음과 같은 그림을 보면 쉽게 이해할 수 있다.

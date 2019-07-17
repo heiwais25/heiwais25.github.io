@@ -3,7 +3,7 @@ title: Normal distribution prior
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 <p>
 	There are two cases for the prior of normal distribution because it has two parameters(mean, std.dev). The first case is when we know std.dev and second case is when we don't know std.dev. <b>Normally, normal distribution is applied to continuous quantity and certain case central limit theorem can be applied.</b>

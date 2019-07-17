@@ -3,7 +3,7 @@ title: Object detection
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [machineLearning, CNN]
+categories: [Machine Learning, CNN]
 ---
 # Object detection
 YOLO 알고리즘을 다루기 이전에 먼저 Object detection에 대해 더 알고 갈 필요가 있다. 보통 머신러닝을 배우고 처음으로 이미지를 다루는 Model을 만들었을 때, 우리는 이미지 자체의 Label을 다루게 된다. 예를 들면, 사진 안에 고양이가 있다면 우리의 Model은 그 사진을 고양이로 Labeling 된 데이터로 인식하게 된다. 이러한 과정을 **Classification**이라고 할 수 있다. 즉, Classification은 주어진 data를 적절한 class로 labeling하는 과정으로 대상의 위치나 회전, 크기 등의 정보는 관계없이 오로지 그 data에 class에 해당하는 content가 있냐 없냐를 다룬다. location에 대한 정보를 함께 다룰 수도 잇는데, 이를 **Localization**이라고 한다.

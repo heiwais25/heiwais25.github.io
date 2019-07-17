@@ -3,7 +3,7 @@ title: Poisson / Exponential distribution
 layout: post
 author:     "JongHyun"
 header-img: "img/post-bg-06.jpg"
-categories: [dataAnalysis, statistics]
+categories: [Data Analysis, statistics]
 ---
 ### Poisson distribution
 <p>
