@@ -15,7 +15,7 @@ li {
   line-height: 1.67;
   text-align: justify;
   margin-top: 12px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
   margin-top: 18px;
   margin-bottom: 18px;
   padding-left: 12px;
-  word-break: keep-all;
+  word-break: break-all;
 }
 
 h1,
