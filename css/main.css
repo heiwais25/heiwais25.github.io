@@ -3,7 +3,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 1.4rem;
 }
 
 p,
@@ -76,7 +76,7 @@ blockquote ul {
 }
 
 blockquote li {
-  font-size: 16px;
+  font-size: 1.3rem;
 }
 
 img {
