@@ -121,3 +121,7 @@ img.aligncenter {
 img + figcaption {
   margin: 0px 8px 16px 0px;
 }
+
+.MathJax_Display {
+  font-size: 1.2rem;
+}

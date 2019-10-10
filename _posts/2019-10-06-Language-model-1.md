@@ -22,7 +22,7 @@ $$\text{I can play the piano}$$
 > 4. I 다음에 can이 나올 확률
 > 5. I가 나올 확률
 
-$$P(\text{I, can, play, the, piano}) = P(\text{piano|I, can, play, the})\\ \cdot P(\text{the|I, can, play})\\ \cdot P(\text{play|I,can}) \\ \cdot P(\text{can|I}) \\ \cdot P(\text{I})$$
+$$P(\text{I, can, play, the, piano}) = \\ P(\text{piano|I, can, play, the})\\ \cdot P(\text{the|I, can, play})\\ \cdot P(\text{play|I,can}) \\ \cdot P(\text{can|I}) \\ \cdot P(\text{I})$$
 
 위의 식을 일반화하면 다음과 같다.
 
@@ -30,7 +30,7 @@ $$P(w_1, \cdots, w_n) = \Pi_i P(w_i|w_1, \cdots, w_{n-1})$$
 
 이제 남은 건 다음과 같이 Trainig Corpus안에서 각 Case에 대한 Count를 세어주고 이를 이용해 조건부 확률 계산하여 곱하는 것 뿐이다.
 
-$$P(\text{piano|I,can,play,the})=\frac{count(\text{I, can, play, the, piano})}{count(\text{I, can, play, the})}$$
+$$P(\text{piano|I,can,play,the})=\\ \frac{count(\text{I, can, play, the, piano})}{count(\text{I, can, play, the})}$$
 
 굉장히 심플하고 직관적인 방법이지만 이 과정에서는 큰 문제가 존재한다. 만약 우리가 I can play the piano에 대한 확률을 성공적으로 계산할 수 있다고 해보자. 그렇다면, 이를 기반으로 I can play the violin에 대한 확률은 계산할 수 있을까? 이는 불가능한데, **매번 문장의 처음부터 각 단어에 대한 확률을 계산하며 늘려나가기 때문에 I can play the violin에 대해 확률을 계산하려면 무조건 Trainig Corpus에 I can play the violin이 존재해야 한다.** 즉, 위와 같은 방법으로 Language Model을 구성하려면 문장이 구성되는 모든 경우가 Train Set에 있어야 하고 이는 현실적으로 말이 안되는 조건이다.
 
