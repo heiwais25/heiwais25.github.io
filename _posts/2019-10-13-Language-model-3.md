@@ -121,3 +121,7 @@ Cross entropy와 entropy의 관계에서 보았듯이 **같은 대상을 해석�
 1. [N-gram, Perplexity](/nlp/2019/10/06/language-model-1/)
 2. [Smoothing Method](/nlp/2019/10/06/Language-model-2/)
 3. **Entropy, Perplexity derivation**
+
+#### 출처
+
+1. [Stanford Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)

@@ -165,3 +165,7 @@ Kneser-Ney smoothing 중 가장 성능이 우스수한 버전은 **Chen과 Goodm
 1. [N-gram, Perplexity](/nlp/2019/10/06/language-model-1/)
 2. **Smoothing Method**
 3. [Entropy, Perplexity derivation](/nlp/2019/10/13/Language-model-3/)
+
+#### 출처
+
+1. [Stanford Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)

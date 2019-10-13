@@ -126,3 +126,7 @@ N-gram이더라도 항상 Train set에 모든 경우의 수가 있는 것이 아
 1. **N-gram, Perplexity**
 2. [Smoothing Method](/nlp/2019/10/06/language-model-2/)
 3. [Entropy, Perplexity derivation](/nlp/2019/10/13/Language-model-3/)
+
+#### 출처
+
+1. [Stanford Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
