@@ -6,6 +6,14 @@ categories: [NLP]
 author: "JongHyun"
 ---
 
+#### Language Model Series Post
+
+1. **N-gram, Perplexity**
+2. [Smoothing Method](/nlp/2019/10/06/language-model-2/)
+3. [Entropy, Perplexity derivation](/nlp/2019/10/13/Language-model-3/)
+
+---
+
 ### What is language model?
 
 **Language Model은 단어들로 이루어진 문장에 대한 확률을 계산하는 일종의 언어에 대한 Probability Distribution Function**으로 볼 수 있다. 현재의 NLP가 대세가 되기전 가장 주로 사용되었는데 처음에 Model을 구성하고 나면 그 다음부터는 굉장히 빠르게 **문장의 확률을 계산, 현재 문장 다음에 올 단어 예측등**을 할 수 있다. 속도가 굉장히 빠름에도 불구하고 NLP에게 자리를 빼았긴 건 Train Set에 없던 문장들에 대해 **Out of vocabulary (이하 OOV)**가 Smoothing과 같은 해결책에도 불구하고 결국 큰 문제점으로 작용했기 때문이었다. 현재는 NLP가 주로 사용됨에도 불구하고 Langauge Model은 NLP에 부가적으로 자주 사용되기 때문에 꼭 필요한 개념으로 볼 수 있다.
@@ -111,4 +119,10 @@ Language Model은 보통 Train set에 전적으로 의존하기 때문에 만약
 
 N-gram이더라도 항상 Train set에 모든 경우의 수가 있는 것이 아니기 때문에 Co-occurence matrix에는 count가 0인 sparsity problem이 존재한다. 만약 새로운 데이터에 대해 확률을 계산하는 과정에서 해당하는 값에 대한 통계가 없으면 division by zero가 되어 Language Model을 적용할 수 없게 된다. 이를 해결하기 위한 방법 중 대표적인 방법으로는 count가 0인 Matrix 값에 대해 1을 더해주어 확률을 0이 되지 않게 만드는 Smoothing 기법이 있다.
 
-다음 Post에서는 여러가지 Smoothing기법들과 정보학적 관점에서의 Perplexity에 대해 다뤄보겠다.
+---
+
+여기까지 Language Model의 정의, Language Model의 Statistics 문제를 해결하기 위한 N-gram과 성능 측정을 위한 Perplexity 등을 알아보았는데 다음 Post에서는 Zero probability문제를 해결하기 위해 사용된 Smoothing 기법들과 정보학적 관점에서의 Perplexity에 대해 다뤄보겠다.
+
+1. **N-gram, Perplexity**
+2. [Smoothing Method](/nlp/2019/10/06/language-model-2/)
+3. [Entropy, Perplexity derivation](/nlp/2019/10/13/Language-model-3/)

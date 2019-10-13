@@ -6,5 +6,5 @@ group :jekyll_plugins do
   gem "jekyll"
   gem "jekyll-gist"
   gem "mm-jekyll-prism"
-  # gem 'wdm'
+  gem 'wdm'
 end

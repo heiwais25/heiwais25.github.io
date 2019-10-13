@@ -122,15 +122,15 @@ $$PE_{(pos,2i+1)}=\cos(pos/10000^{2i/d_{model}})$$
 
    - Table 2와 같이 **보다 짧은 시간에 적은 Training cost로 SOTA 달성**
 
-   <center><img src="/img/nlp/arxiv1706_img4.png" alt="structure"></center>
+   <center><img src="/img/nlp/arxiv1706_img4.PNG" alt="structure"></center>
 
 2. **다음 Table3과 같이 Transformer의 구조 hyper parameter variation에 대한 성능, 복잡도 비교**
 
-   <center><img src="/img/nlp/arxiv1706_img5.png" alt="structure"></center>
+   <center><img src="/img/nlp/arxiv1706_img5.PNG" alt="structure"></center>
 
 3. **다음 Table4와 같이 작은 모델, 적은 데이터를 통한 English constituency (long sentence)에 대한 연구**
 
-   <center><img src="/img/nlp/arxiv1706_img6.png" alt="structure"></center>
+   <center><img src="/img/nlp/arxiv1706_img6.PNG" alt="structure"></center>
 
 ### 4. Key points
 
