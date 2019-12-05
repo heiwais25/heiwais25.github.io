@@ -1,7 +1,7 @@
 ---
 layout: post
 title: electron에서 nedb를 사용시, nedb 경로 설정 방법과 build시 생길 수 있는 문제 해결
-date: 2019-10-06 22:49
+date: 2019-12-5 11:12
 categories: [electron]
 author: "JongHyun"
 ---

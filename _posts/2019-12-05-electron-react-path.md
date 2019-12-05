@@ -1,7 +1,7 @@
 ---
 layout: post
 title: create-react-app과 electron을 사용시에 경로 문제 해결
-date: 2019-10-06 22:49
+date: 2019-12-5 11:40
 categories: [electron]
 author: "JongHyun"
 ---
