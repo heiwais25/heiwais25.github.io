@@ -37,7 +37,8 @@ DB 경로로 위와 같은 `app.getPath()`가 아니라  `app.getAppPath()`를 �
 
 보다 자세한 내용은 다음 링크들에서 확인할 수 있다.
 
-> 1. `electron`에서 제공하는 경로 설정값 [링크](https://electronjs.org/docs/api/app#appgetpathname)
-> 2. `electron`의 application package process [링크](https://electronjs.org/docs/tutorial/application-packaging#%EC%9D%91%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%ED%8C%A8%ED%82%A4%EC%A7%95)
-> 3. local db를 접근할 수 없는 이유 [링크](https://stackoverflow.com/questions/42900015/electron-packager-can-not-locate-local-db-file-after-packing/42929720#42929720)
+## 관련 내용
 
+1. `electron`에서 제공하는 경로 설정값 [링크](https://electronjs.org/docs/api/app#appgetpathname)
+2. `electron`의 application package process [링크](https://electronjs.org/docs/tutorial/application-packaging#%EC%9D%91%EC%9A%A9-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%ED%8C%A8%ED%82%A4%EC%A7%95)
+3. local db를 접근할 수 없는 이유 [링크](https://stackoverflow.com/questions/42900015/electron-packager-can-not-locate-local-db-file-after-packing/42929720#42929720)
