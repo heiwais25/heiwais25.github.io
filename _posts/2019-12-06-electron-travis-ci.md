@@ -14,7 +14,7 @@ Github에 publish하기 위해서는 먼저 repository에 접근할 권한이 �
 
 Github token이 준비됬다면 이제 `package.json`의 `build`에 github repository에 대한 정보와 build target을 추가해주자. 이 post에서는 linux용 appImage배포만을 고려한다.
 
-```json
+```js
 {
   "build": { // build 예시
     ...,
@@ -140,7 +140,7 @@ fi
 
 위 script에서 주목할 점은 docker 환경을 구성할 때 `GH_TOKEN=$GH_TOKEN`으로 travis에 설정해놓은 token값을 환경변수로 설정했다는 것이다. 마지막으로 전체 프로젝트를 빌드 후 `electron-builder`까지 실행시키도록 `package.json`의 `script.release`를 설정해주자.
 
-```json
+```js
 {
   "script": {
     "build": "run-s react:build electron:build",
